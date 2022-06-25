@@ -8,13 +8,13 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
   @override
   final String signInActionText;
   @override
-  final String registerActionText;
+  final String InscriptionActionText;
   @override
   final String linkEmailButtonText;
   @override
   final String signInButtonText;
   @override
-  final String registerButtonText;
+  final String InscriptionButtonText;
   @override
   final String signInWithPhoneButtonText;
   @override
@@ -60,9 +60,9 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
   @override
   final String signInText;
   @override
-  final String registerText;
+  final String InscriptionText;
   @override
-  final String registerHintText;
+  final String InscriptionHintText;
   @override
   final String signInHintText;
   @override
@@ -170,17 +170,17 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
 
   const EnLocalizations({
     this.emailInputLabel = 'Email',
-    this.passwordInputLabel = 'Password',
-    this.signInActionText = 'Sign in',
-    this.registerActionText = 'Register',
-    this.signInButtonText = 'Sign in',
-    this.registerButtonText = 'Register',
+    this.passwordInputLabel = 'mot de passe',
+    this.signInActionText = 'Connexion',
+    this.InscriptionActionText = 'Inscription',
+    this.signInButtonText = 'Connexion',
+    this.InscriptionButtonText = 'Inscription',
     this.linkEmailButtonText = 'Next',
-    this.signInWithPhoneButtonText = 'Sign in with phone',
-    this.signInWithGoogleButtonText = 'Sign in with Google',
-    this.signInWithAppleButtonText = 'Sign in with Apple',
-    this.signInWithTwitterButtonText = 'Sign in with Twitter',
-    this.signInWithFacebookButtonText = 'Sign in with Facebook',
+    this.signInWithPhoneButtonText = 'Connexion with phone',
+    this.signInWithGoogleButtonText = 'Connexion with Google',
+    this.signInWithAppleButtonText = 'Connexion with Apple',
+    this.signInWithTwitterButtonText = 'Connexion with Twitter',
+    this.signInWithFacebookButtonText = 'Connexion with Facebook',
     this.phoneVerificationViewTitleText = 'Enter your phone number',
     this.verifyPhoneNumberButtonText = 'Next',
     this.verifyCodeButtonText = 'Verify',
@@ -200,11 +200,11 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
         'Access to this account has been temporarily disabled',
     this.wrongOrNoPasswordErrorText =
         'The password is invalid or the user does not have a password',
-    this.signInText = 'Sign in',
-    this.registerText = 'Register',
-    this.registerHintText = "Don't have an account?",
-    this.signInHintText = 'Already have an account?',
-    this.signOutButtonText = 'Sign out',
+    this.signInText = 'Connexion',
+    this.InscriptionText = 'Inscription',
+    this.InscriptionHintText = "Vous n'avez pas de compte ?",
+    this.signInHintText = 'Vous avez déjà un compte?',
+    this.signOutButtonText = 'Deconnexion',
     this.phoneInputLabel = 'Phone number',
     this.phoneNumberInvalidErrorText = 'Phone number is invalid',
     this.phoneNumberIsRequiredErrorText = 'Phone number is required',
@@ -220,25 +220,25 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
     this.resetPasswordButtonLabel = 'Reset password',
     this.verifyItsYouText = "Verify it's you",
     this.differentMethodsSignInTitleText =
-        'Use one of the following methods to sign in',
+        'Use one of the following methods to Connexion',
     this.findProviderForEmailTitleText = 'Enter your email to continue',
     this.continueText = 'Continue',
     this.countryCode = 'Code',
     this.codeRequiredErrorText = 'Country code is required',
     this.invalidCountryCode = 'Invalid code',
     this.chooseACountry = 'Choose a country',
-    this.enableMoreSignInMethods = 'Enable more sign in methods',
-    this.signInMethods = 'Sign in methods',
+    this.enableMoreSignInMethods = 'Enable more Connexion methods',
+    this.signInMethods = 'Connexion methods',
     this.provideEmail = 'Provide your email and password',
     this.goBackButtonLabel = 'Go back',
     this.passwordResetEmailSentText =
         "We've sent you an email with a link to reset your password. Please check your email.",
     this.forgotPasswordHintText =
         'Provide your email and we will send you a link to reset your password',
-    this.emailLinkSignInButtonLabel = 'Sign in with magic link',
-    this.signInWithEmailLinkViewTitleText = 'Sign in with magic link',
+    this.emailLinkSignInButtonLabel = 'Connexion with magic link',
+    this.signInWithEmailLinkViewTitleText = 'Connexion with magic link',
     this.signInWithEmailLinkSentText =
-        "We've sent you an email with a magic link. Check your email and follow the link to sign in",
+        "We've sent you an email with a magic link. Check your email and follow the link to Connexion",
     this.sendLinkButtonLabel = 'Send magic link',
     this.arrayLabel = 'array',
     this.booleanLabel = 'boolean',
