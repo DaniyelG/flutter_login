@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 import 'lang/en.dart';
 
-const kDefaultLocale = Locale('en');
+const kDefaultLocale = Locale('fr');
 
 class FlutterFireUILocalizations<T extends FlutterFireUILocalizationLabels> {
   final Locale locale;
