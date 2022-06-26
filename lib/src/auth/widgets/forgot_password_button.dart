@@ -17,6 +17,7 @@ class ForgotPasswordButton extends StatelessWidget {
       variant: ButtonVariant.text,
       text: l.forgotPasswordButtonLabel,
       onPressed: onPressed,
+      color: Colors.orange,
     );
   }
 }
