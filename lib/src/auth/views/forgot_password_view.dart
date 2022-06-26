@@ -66,11 +66,11 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Title(text: l.forgotPasswordViewTitle),
+          Text(l.forgotPasswordViewTitle, style: TextStyle(color: Colors.orange, fontSize: 25)),
           if (!emailSent) ...[
             spacer,
             widget.subtitleBuilder?.call(context) ??
-                Text(l.forgotPasswordHintText),
+                Text(l.forgotPasswordHintText, style: TextStyle(color: Colors.white)),
           ],
           spacer,
           if (!emailSent) ...[
@@ -103,6 +103,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
           UniversalButton(
             variant: ButtonVariant.text,
             text: l.goBackButtonLabel,
+            color: Colors.orange,
             onPressed: () => Navigator.pop(context),
           ),
           if (widget.footerBuilder != null) widget.footerBuilder!(context),
