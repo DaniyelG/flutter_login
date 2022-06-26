@@ -81,7 +81,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             ),
             spacer,
           ] else ...[
-            Text(l.passwordResetEmailSentText),
+            Text(l.passwordResetEmailSentText, style: TextStyle(color: Colors.white)),
             spacer,
           ],
           if (exception != null) ...[
