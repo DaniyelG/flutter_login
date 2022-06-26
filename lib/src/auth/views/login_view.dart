@@ -128,7 +128,7 @@ class LoginViewState extends State<LoginView> {
 
     if (isCupertino) {
       final theme = CupertinoTheme.of(context);
-      registerTextColor = theme.primaryColor;
+      registerTextColor = Colors.white;
       hintStyle = theme.textTheme.textStyle.copyWith(fontSize: 12);
     } else {
       final theme = Theme.of(context);
@@ -137,7 +137,7 @@ class LoginViewState extends State<LoginView> {
     }
 
     return [
-      Title(text: title),
+      Text(title, style: TextStyle(color: Colors.orange, fontSize: 25)),
       const SizedBox(height: 16),
       if (widget.subtitleBuilder != null)
         widget.subtitleBuilder!(
@@ -150,12 +150,12 @@ class LoginViewState extends State<LoginView> {
             children: [
               TextSpan(
                 text: '$hint ',
-                style: hintStyle,
+                style: TextStyle(color: Colors.white),
               ),
               TextSpan(
                 text: actionText,
                 style: Theme.of(context).textTheme.button?.copyWith(
-                      color: registerTextColor,
+                      color: Colors.orange,
                     ),
                 mouseCursor: SystemMouseCursors.click,
                 recognizer: TapGestureRecognizer()

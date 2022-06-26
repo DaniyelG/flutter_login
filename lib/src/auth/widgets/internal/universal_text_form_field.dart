@@ -42,7 +42,7 @@ class UniversalTextFormField extends PlatformWidget {
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(
-            color: CupertinoColors.inactiveGray,
+            color: CupertinoColors.white,
           ),
         ),
       ),
@@ -73,9 +73,22 @@ class UniversalTextFormField extends PlatformWidget {
       focusNode: focusNode,
       controller: controller,
       decoration: InputDecoration(
+        fillColor: Colors.black.withOpacity(0.2),
+        filled: true,
         labelText: placeholder,
         prefix: prefix,
+        labelStyle: new TextStyle(color: Colors.white, fontSize: 16.0),
+        border: new OutlineInputBorder(
+          borderRadius: const BorderRadius.all(
+            const Radius.circular(8.0),
+          ),
+          borderSide: new BorderSide(
+            color: Colors.orange,
+            width: 1.0,
+          ),
+        ),
       ),
+      style: TextStyle(fontSize: 20.0, color: Colors.white),
       validator: validator,
       onFieldSubmitted: onSubmitted,
       inputFormatters: inputFormatters,
